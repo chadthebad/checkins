@@ -1,4 +1,10 @@
 Checkins::Application.routes.draw do
+  get "static/index"
+
+  get "static/map"
+
+  get "static/list"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
