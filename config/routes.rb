@@ -5,6 +5,8 @@ Checkins::Application.routes.draw do
 
   get "static/list"
 
+  match "/login" => "static#login"
+  match "/callback" => "static#callback"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
