@@ -1,0 +1,6 @@
+<% provide :javascript do %>
+  <%= javascript_tag do %>
+    var checkins = <%= @checkins.to_json.html_safe %>;
+  <% end %>
+<% end %>
+<div id='map_canvas' style="width: 900px; height: 500px"></div>

@@ -1,7 +1,11 @@
 Checkins::Application.routes.draw do
 
   resources :tags
-  resources :checkins
+  resources :checkins do
+    collection do
+      get 'map'
+    end
+  end
 
 
 
