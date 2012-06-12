@@ -9,7 +9,7 @@ class StaticController < ApplicationController
     # binding.pry
     if params[:access_token]
       cookies[:access_token] = params[:access_token]
-      redirect_to "/static/list"
+      redirect_to "/checkins"
     end
   end
   
