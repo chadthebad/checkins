@@ -1,0 +1,13 @@
+<ul>
+  <% @checkins.each do |checkin| %>
+    <li>
+      <%= checkin[:checkin_name] %>
+
+      <%=link_to new_tag_path(:checkin_name => checkin[:checkin_name]) do %>
+        <i class="icon-tag"></i>
+      <% end %>
+
+      <%= checkin[:tags] %>
+    </li>
+  <% end %>
+</ul>

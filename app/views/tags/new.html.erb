@@ -1,0 +1,17 @@
+<h4>Tag a checkin:</h4>
+
+<div>
+  <%=params[:checkin_name]%>
+</div>
+
+<div class="well">
+
+  <%= form_for @tag do |f| %>
+    <%= f.label :tag_name %>
+    <%= f.text_field :tag_name, :placeholder => 'Enter Tag Name' %>
+    <%= f.hidden_field :checkin_name %>
+
+    <%= f.submit :Tag %>
+  <% end  %>
+
+</div>
