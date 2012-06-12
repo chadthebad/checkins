@@ -1,2 +1,5 @@
-<h1>Static#list</h1>
-<p>Find me in app/views/static/list.html.erb</p>
+<ul>
+  <% @checkins.each do |place| %>
+    <li><%= place['venue']['name'] %></li>
+  <% end %>
+</ul>

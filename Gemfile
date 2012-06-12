@@ -23,7 +23,7 @@ end
 gem 'jquery-rails'
 gem 'pry'
 gem 'twitter-bootstrap-rails'
-gem 'skittles'
+gem 'foursquare-api', :require => "foursquare"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

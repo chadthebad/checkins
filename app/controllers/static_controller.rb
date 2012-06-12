@@ -6,6 +6,9 @@ class StaticController < ApplicationController
   end
 
   def list
+    user_client = Foursquare::User.new(cookies[:access_token])
+    response = user_client.checkins("self", :afterTimestamp => 0, :beforeTimestamp => Time.now.to_i)
+    @checkins = response['response']['checkins']['items']
   end
   
   def callback
